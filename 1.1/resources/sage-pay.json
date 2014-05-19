@@ -1,0 +1,14 @@
+[
+	{
+		"name": "sage/process",
+		"desc": "Process a Sage Pay Token",
+        "libraries": [
+            "methods/libs/mail/PHPMailerAutoload.php"
+        ],
+		"methods": {
+			"GET": {
+				"file": "methods/api/sage-pay/process.php"
+			}
+		}
+	}
+]

@@ -1,0 +1,782 @@
+[
+    {
+        "name": ":deviceGUID/login",
+        "desc": "",
+        "methods": {
+            "POST": {
+                "file": "methods/api/userauth.php"
+            }
+        }
+    },
+    {
+        "name": ":token/cashup",
+        "desc": "upload a cashup",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/upload/cashup.php"
+            }
+        }
+    },
+    {
+        "name": ":token/payout",
+        "desc": "upload a payout",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/upload/payout.php"
+            }
+        }
+    },
+    {
+        "name": ":token/categories",
+        "desc": "get categories",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/products/get-categories.php"
+            }
+        }
+    },
+    {
+        "name": ":token/category/:catid",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/products/update-category.php"
+            }
+        }
+    },
+    {
+        "name": ":token/channel/:channel/tariffs",
+        "desc": "get tariffs",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/tariffs/get-tariffs.php"
+            }
+        }
+    },
+    {
+        "name": ":token/channel/:channelguid/sale-types",
+        "desc": "get channel sale types",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/channel/get-channel-sale-types.php"
+            }
+        }
+    },
+    {
+        "name": ":token/community",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/community/get-community.php"
+            }
+        }
+    },
+    {
+        "name": ":token/suppliers",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/community/get-suppliers.php"
+            }
+        }
+    },
+    {
+        "name": ":token/customers",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/community/get-customers.php"
+            }
+        }
+    },
+    {
+        "name": ":token/community/:communityguid",
+        "desc": "update / insert community",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/community/update-community.php"
+            },
+            "GET": {
+                "file": "methods/api/community/update-community.php"
+            }
+        }
+    },
+    {
+        "name": ":token/customer/:guid",
+        "desc": "update / insert customer",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/community/update-customer.php"
+            }
+        }
+    },
+    {
+        "name": ":token/supplier/:guid",
+        "desc": "update / insert supplier",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/community/update-supplier.php"
+            }
+        }
+    },
+    {
+        "name": ":token/company/:companyguid",
+        "desc": "Company method",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/company/get-company.php"
+            },
+            "POST": {
+                "file": "methods/api/company/update-company.php"
+            }
+        }
+    },
+    {
+        "name": ":token/ean",
+        "desc": "get ean",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/products/get-ean.php"
+            }
+        }
+    },
+    {
+        "name": ":token/ean/:eanguid",
+        "desc": "get ean",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/products/update-ean.php"
+            }
+        }
+    },
+    {
+        "name": ":token/item/:itemguid/imei/:imei",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/products/imei-cost.php"
+            }
+        }
+    },
+    {
+        "name": ":token/:syncguid/confirm",
+        "desc": "confirm an item",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/items/confirm.php"
+            },
+            "GET": {
+                "file": "methods/api/items/confirm.php"
+            }
+        }
+    },
+    {
+        "name": ":token/movement",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/upload/movement.php"
+            }
+        }
+    },
+    {
+        "name": ":token/notification",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php",
+            "methods/libs/mail/PHPMailerAutoload.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/services/notification.php"
+            },
+            "GET": {
+                "file": "methods/api/services/notification.php"
+            }
+        }
+    },
+    {
+        "name": ":token/product",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/products/update-product.php"
+            }
+        }
+    },
+    {
+        "name": ":token/product/:productguid",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/products/get-product.php"
+            },
+            "POST": {
+                "file": "methods/api/products/update-product.php"
+            }
+        }
+    },
+    {
+        "name": ":token/search-product",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/products/search-product.php"
+            }
+        }
+    },
+    {
+        "name": ":token/product/:productguid/ean",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/products/product-ean.php"
+            }
+        }
+    },
+    {
+        "name": ":token/products",
+        "desc": "get products list",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/products/get-products.php"
+            }
+        }
+    },
+    {
+        "name": ":token/report/:type",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/reports/audit.php"
+            }
+        }
+    },
+    {
+        "name": ":token/pdf-report/:type",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/reports/pdf.php"
+            }
+        }
+    },
+    {
+        "name": ":token/pdf-generate/:type",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/services/pdf-generate.php"
+            }
+        }
+    },
+    {
+        "name": ":token/sale",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/upload/sale.php"
+            }
+        }
+    },
+    {
+        "name": ":token/setsite/:siteguid",
+        "desc": "Sets the site",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/set-site.php"
+            }
+        }
+    },
+    {
+        "name": ":token/site/:siteguid",
+        "desc": "get a single site",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/company/get-site.php"
+            },
+            "POST": {
+                "file": "methods/api/company/update-site.php"
+            }
+        }
+    },
+    {
+        "name": ":token/sites",
+        "desc": "get sites list",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/company/get-sites.php"
+            }
+        }
+    },
+    {
+        "name": ":token/stocktake",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/stocktake/add-stocktake.php"
+            },
+            "GET": {
+                "file": "methods/api/stocktake/get-stocktake.php"
+            }
+        }
+    },
+    {
+        "name": ":token/stocktake/commit",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/stocktake/commit-stocktake.php"
+            },
+            "GET": {
+                "file": "methods/api/stocktake/commit-stocktake.php"
+            }
+        }
+    },
+    {
+        "name": ":token/user/:userguid",
+        "desc": "user methods ( get / update / create )",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/company/users/update-user.php"
+            },
+            "GET": {
+                "file": "methods/api/company/users/update-user.php"
+            }
+        }
+    },
+    {
+        "name": ":token/users",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/company/users/get-users.php"
+            }
+        }
+    },
+    {
+        "name": "audit",
+        "desc": "",
+        "methods": {
+            "POST": {
+                "file": "methods/api/audit.php"
+            }
+        }
+    },
+    {
+        "name": ":token/audit",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/audit.php"
+            }
+        }
+    },
+    {
+        "name": "login",
+        "desc": "basic site login",
+        "methods": {
+            "POST": {
+                "file": "methods/api/site-auth-login.php"
+            }
+        },
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        }
+    },
+    {
+        "name": "notification",
+        "desc": "",
+        "libraries": [
+            "methods/libs/mail/PHPMailerAutoload.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/services/notification.php"
+            }
+        }
+    },
+    {
+        "name": "service/ean-sync",
+        "desc": "",
+        "methods": {
+            "GET": {
+                "file": "methods/api/services/ean-sync.php"
+            }
+        }
+    },
+    {
+        "name": "service/invoice-pdf/:saleguid",
+        "desc": "",
+        "methods": {
+            "GET": {
+                "file": "methods/api/services/pdf-convert.php"
+            }
+        }
+    },
+    {
+        "name": "service/invoice/:saleguid",
+        "desc": "",
+        "methods": {
+            "GET": {
+                "file": "methods/report-templates/invoice-template.php"
+            }
+        }
+    },
+    {
+        "name": "service/order-pdf/:saleguid",
+        "desc": "",
+        "methods": {
+            "GET": {
+                "file": "methods/api/services/pdf-order.php"
+            }
+        }
+    },
+    {
+        "name": "service/order/:saleguid",
+        "desc": "",
+        "methods": {
+            "GET": {
+                "file": "methods/report-templates/order-template.php"
+            }
+        }
+    },
+    {
+        "name": "services/movements",
+        "desc": "movements sync process",
+        "methods": {
+            "GET": {
+                "file": "methods/api/services/movement-sync.php"
+            }
+        }
+    },
+    {
+        "name": "site-login",
+        "desc": "",
+        "methods": {
+            "POST": {
+                "file": "methods/site/login.php"
+            }
+        },
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        }
+    },
+    {
+        "name": "support/log-ticket",
+        "desc": "",
+        "methods": {
+            "POST": {
+                "file": "methods/support/log-ticket.php"
+            }
+        },
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        }
+    },
+    {
+        "name": "support/register",
+        "desc": "",
+        "methods": {
+            "POST": {
+                "file": "methods/support/register.php"
+            },
+            "GET": {
+                "file": "methods/support/register.php"
+            }
+
+        },
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        }
+    },
+    {
+        "name": ":token/dashboard",
+        "desc": "Dashboard Loader",
+        "debug": "true",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/templates/dashboard.php"
+            }
+        }
+    },
+    {
+        "name": ":token/resetconfirm",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/services/reset-confirm.php"
+            }
+        }
+    },
+    {
+        "name": "pastel_sync",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/pastel/pastel_sync.php"
+            }
+        }
+    },
+    {
+        "name": ":token/tempsh/:guid",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/upload/tempsh.php"
+            }
+        }
+    },
+    {
+        "name": ":token/tempsl/:guid",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/upload/tempsl.php"
+            }
+        }
+    },
+    {
+        "name": ":token/tempbaskets/:guid",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/upload/tempbaskets.php"
+            }
+        }
+    },
+    {
+        "name": ":token/basketnotes/:guid",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/upload/basketnotes.php"
+            }
+        }
+    },
+    {
+        "name": ":token/tempsales",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/sales/tempsales.php"
+            }
+        }
+    },
+    {
+        "name": ":token/recipes/:productguid",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/recipes/set-recipes.php"
+            },
+            "GET": {
+                "file": "methods/api/recipes/get-recipes.php"
+            }
+        }
+    },
+    {
+        "name": "will",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/pastel/will.php"
+            }
+        }
+    },
+    {
+        "name": ":token/stocktake/getcountlist",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/stocktake/get-countlist.php"
+            }
+        }
+    },
+    {
+        "name": ":token/dealbundles/:dealcode",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/dealbundles/get-dealbundles.php"
+            }
+        }
+    },
+    {
+        "name": "snapscan/:siteguid",
+        "desc": "",
+        "methods": {
+            "POST": {
+                "file": "methods/api/snapscan/webhook.php"
+            },
+            "GET": {
+                "file": "methods/api/snapscan/webhook.php"
+            }
+        }
+    },
+    {
+        "name": ":token/gettransfers",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/api/transfers/get-transfers.php"
+            }
+        }
+    },
+    {
+        "name": ":token/deletetransfer/:moveguid",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/transfers/del-transfer.php"
+            }
+        }
+    }
+]

@@ -1,0 +1,24 @@
+[
+	{
+		"type"      : "global",
+		"desc"		: "Global Settings",
+		"debug"     : true,
+		"pastel"	: {
+			"endpoint" 	: "https://www.pastelmybusiness.co.za/api/1.0.1/",
+			"api_key"	: "AD25B46D-79B9-42F0-BE87-7249B8AF878E"
+		},
+		"headers"	: {
+			"Access-Control-Allow-Origin" : "*"
+		},
+		"errors"    : {
+			"404"   : "errorpages/404.php"
+		},
+		"libraries" : [
+			"libs/utils.php",
+			"libs/remotecall.php",
+			"libs/func.php",
+			"methods/libs/db.php",
+			"methods/api/pastel/func.php"
+		]
+	}
+]

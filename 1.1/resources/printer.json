@@ -1,0 +1,21 @@
+[
+    {
+        "loadElement": "routeSaver",
+        "callback": "saveRoute",
+        "index": "32",
+        "name": "receipt/:guid",
+        "desc": "printer",
+        "debug": "true",
+        "methods": {
+            "POST": {
+                "file": "methods/api/services/printer.php"
+            },
+            "GET": {
+                "file": "methods/api/services/printer.php"
+            }
+        },
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        }
+    }
+]

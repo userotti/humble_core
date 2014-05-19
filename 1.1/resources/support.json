@@ -1,0 +1,17 @@
+[
+	{
+		"name": "recover-password",
+		"desc": "recover a lost password",
+        "libraries": [
+            "methods/libs/mail/PHPMailerAutoload.php"
+        ],
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        },
+		"methods": {
+			"POST": {
+				"file": "methods/support/lost-pass.php"
+			}
+		}
+	}
+]

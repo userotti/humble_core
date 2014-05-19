@@ -1,0 +1,44 @@
+[
+	{
+		"name": "pastel-products",
+		"desc": "Sync Products between Pastel and Humble",
+		"methods": {
+			"GET": {
+				"file": "methods/api/pastel/sync-products.php"
+			}
+		}
+	},{
+		"name": "pastel-suppliers",
+		"desc": "Sync suppliers between Pastel and Humble",
+		"methods": {
+			"GET": {
+				"file": "methods/api/pastel/sync-suppliers.php"
+			}
+		}
+	},{
+		"name": "pastel-customers",
+		"desc": "Sync customers between Pastel and Humble",
+		"methods": {
+			"GET": {
+				"file": "methods/api/pastel/sync-customers.php"
+			}
+		}
+	},{
+		"name": "pastel-grv",
+		"desc": "Sync GRV transaction between Pastel and Humble",
+		"methods": {
+			"GET": {
+				"file": "methods/api/pastel/sync-grv.php"
+			}
+		}
+	},
+	{
+		"name": "pastel-will",
+		"desc": "Will Test file",
+		"methods": {
+			"GET": {
+				"file": "methods/api/pastel/will.php"
+			}
+		}
+	}
+]
