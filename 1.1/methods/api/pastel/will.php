@@ -1,21 +1,7 @@
 <?php
-	
+	console("will.php");
 
 
-	checkTempBase();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	checkDeskDotCom();
 
 ?>

@@ -1,0 +1,16 @@
+<?php
+
+	console("domain.php");
+
+
+
+
+
+
+
+
+
+
+
+
+?>

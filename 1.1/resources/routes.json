@@ -81,6 +81,18 @@
         }
     },
     {
+        "name": ":token/saletypes/:channelguid",
+        "desc": "update sale types",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/channel/saletypes.php"
+            }
+        }
+    },
+    {
         "name": ":token/community",
         "desc": "",
         "libraries": [
@@ -776,6 +788,42 @@
         "methods": {
             "POST": {
                 "file": "methods/api/transfers/del-transfer.php"
+            }
+        }
+    },
+    {
+        "name": ":token/heartbeat",
+        "desc": "",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/heartbeat/heartbeat.php"
+            }
+        }
+    },
+    {
+        "name": ":token/upload/:table/:guid",
+        "desc": "generic upload method",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/upload/upload.php"
+            }
+        }
+    },
+    {
+        "name": ":token/snapscan/:saleguid",
+        "desc": "generic upload method",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/snapscan/tender.php"
             }
         }
     }

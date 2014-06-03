@@ -54,7 +54,7 @@ if($user->locked == '1'){
       <script>
       //jQuery('body').addClass('login-body');
       //jQuery('.cashier-pin').eq(0).focus();
-      window.location = 'http://dev.humble.co.za/signin.php';
+      window.location = 'http://humble.co.za/login.php';
       </script>
 <?php
   return;

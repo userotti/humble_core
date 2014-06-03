@@ -1,0 +1,191 @@
+[
+    {
+        "name": "template/login-form",
+        "desc": "gets the login form template",
+        "debug": "true",
+        "methods": {
+            "GET": {
+                "file": "methods/templates/login-form.php"
+            }
+        },
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        }
+    },
+    {
+        "name": ":token/template/login-form",
+        "desc": "gets the login form template",
+        "debug": "true",
+        "methods": {
+            "GET": {
+                "file": "methods/templates/login-form.php"
+            }
+        },
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        }
+    },
+    {
+        "name": ":token/template/till",
+        "desc": "",
+        "debug": "true",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/templates/till.php"
+            }
+        }
+    },
+    {
+        "name": ":token/template/product-form",
+        "desc": "",
+        "debug": "true",
+        "methods": {
+            "GET": {
+                "file": "methods/templates/product-form.php"
+            }
+        }
+    },
+    {
+        "name": ":token/template/inventory",
+        "desc": "",
+        "debug": "true",
+        "methods": {
+            "GET": {
+                "file": "methods/templates/inventory.php"
+            }
+        }
+    },
+    {
+        "name": ":token/template/product-list",
+        "desc": "",
+        "debug": "true",
+        "methods": {
+            "GET": {
+                "file": "methods/templates/products-list.php"
+            }
+        }
+    },
+    {
+        "name": ":token/template/select-product-list",
+        "desc": "",
+        "debug": "true",
+        "methods": {
+            "GET": {
+                "file": "methods/templates/product-selector-list.php"
+            }
+        }
+    },
+    {
+        "name": "template/sites-list",
+        "desc": "",
+        "debug": "true",
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        },
+        "methods": {
+            "GET": {
+                "file": "methods/templates/sites-list.php"
+            }
+        }
+    },
+    {
+        "name": ":token/template/view-product",
+        "desc": "",
+        "debug": "true",
+        "methods": {
+            "GET": {
+                "file": "methods/templates/view-product.php"
+            }
+        }
+    },
+    {
+        "name": ":token/template/settings",
+        "desc": "",
+        "debug": "true",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/templates/settings.php"
+            }
+        }
+    },
+    {
+        "name": ":token/template/cashup",
+        "desc": "",
+        "debug": "true",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/templates/cashup.php"
+            }
+        }
+    },
+    {
+        "name": ":token/template/reports",
+        "desc": "",
+        "debug": "true",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/templates/reports.php"
+            }
+        }
+    },
+    {
+        "name": ":token/app_loader",
+        "desc": "",
+        "debug": "true",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        },
+        "methods": {
+            "GET": {
+                "file": "methods/templates/app_loader.php"
+            }
+        }
+    },
+    {
+        "name": ":token/app_sync",
+        "desc": "",
+        "debug": "true",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "GET": {
+                "file": "methods/templates/app_sync.php"
+            }
+        }
+    },
+    {
+        "name": ":token/lock_till",
+        "desc": "",
+        "debug": "true",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "headers": {
+            "Access-Control-Allow-Origin": "*"
+        },
+        "methods": {
+            "GET": {
+                "file": "methods/templates/lock-till.php"
+            },
+            "POST": {
+                "file": "methods/templates/lock-till.php"
+            }
+        }
+    }
+]

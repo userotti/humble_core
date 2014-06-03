@@ -1,0 +1,89 @@
+[
+	{
+		"name": ":token/pastel-companies",
+		"desc": "Get companies list",
+		"libraries" : [
+            "methods/api/userauth.php"
+		],
+		"methods": {
+			"GET": {
+				"file": "methods/api/pastel/get-companies.php"
+			},
+			"POST": {
+				"file": "methods/api/pastel/get-companies.php"
+			}
+		}
+	},
+	{
+		"name": ":token/company/:company/suppliers",
+		"desc": "Get suppliers for a company list",
+		"libraries" : [
+			"methods/api/userauth.php"
+		],
+		"methods": {
+			"GET": {
+				"file": "methods/api/pastel/get-suppliers.php"
+			}
+		}
+	},
+	{
+		"name": ":token/suppliers",
+		"desc": "Get a Sync list for suppliers",
+		"libraries" : [
+			"methods/api/userauth.php"
+		],
+		"methods": {
+			"GET": {
+				"file": "methods/api/pastel/get-suppliers.php"
+			}
+		}
+	},
+	{
+        "name": ":token/setpastelsite/:siteguid/:pastelid",
+        "desc": "Sets the site",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/set-pastel-site.php"
+            }
+        }
+    },
+	{
+        "name": ":token/setpastelweb",
+        "desc": "set pastel to this site for web till",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/set-pastel-web.php"
+            }
+        }
+    },
+    {
+        "name": ":token/setpastelcompanyname/:siteguid/:pastelcompanyname",
+        "desc": "Sets the company name",
+        "libraries": [
+            "methods/api/userauth.php"
+        ],
+        "methods": {
+            "POST": {
+                "file": "methods/api/set-pastel-company.php"
+            }
+        }
+    },
+	{
+		"name": ":token/pastel-products",
+		"desc": "Get a list of products",
+		"libraries" : [
+			"methods/api/userauth.php"
+		],
+		"methods": {
+			"GET": {
+				"file": "methods/api/pastel/get-products.php"
+			}
+		}
+	}
+]

@@ -196,6 +196,8 @@ body { margin-top: 95px; }
 		<script src="/static/site/js/plugins/modal.baldrick.js"></script>
 		<script src="/static/site/js/plugins/animate.baldrick.js"></script>
 		<script type="text/javascript">
+
+		console.log("het jou");
 			var listLimit = 15;
 			// helpers
 			Handlebars.registerHelper('rowclass', function(idx){
